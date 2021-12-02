@@ -198,3 +198,55 @@ section .color:nth-child(3)
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
+
+
+.containerr
+{
+    
+    position: relative;
+    width: 100%;
+    height: 99.9%;
+    display: flex;
+    background: rgba(255, 255, 255, 0);
+}
+.containerr ::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg,#fff1 0px,#fff1 1px,transparent 1px, transparent 10px), 
+    repeating-linear-gradient(0deg,#fff1 0px,#fff1 1px,transparent 1px, transparent 10px);
+    background-size: 10px 10px;
+}
+.containerr .card
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.containerr .card:hover
+{
+    flex-grow: 3;
+    background: #1a1a1a;
+}
+.containerr .card ion-icon
+{
+    font-size: 15vw;
+    color: #1a1a1a;
+    transition: 0.5s ease-in-out;
+}
+.containerr .card:hover ion-icon
+{
+    color: #fff;
+    font-size: 25vw;
+    filter: drop-shadow(0 0 10px #ea4884) 
+    drop-shadow(0 0 30px #ea4884) 
+    drop-shadow(0 0 60px #ea4884)
+    drop-shadow(0 0 100px #ea4884)
+    drop-shadow(0 0 150px #ea4884);
+}
