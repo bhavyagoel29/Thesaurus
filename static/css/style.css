@@ -193,7 +193,7 @@ section .color:nth-child(3)
     margin-top: 5px;
     color: rgb(0, 0, 0);
 }
-.forget a
+.forget ul
 {
     color: rgb(0, 0, 0);
     font-weight: 600;
